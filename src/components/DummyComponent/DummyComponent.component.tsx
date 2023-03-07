@@ -1,10 +1,18 @@
-import styles from "./styles.module.scss";
+import { useEffect } from 'react';
 
-import { useDymmmyComponent } from "./DummyComponent.hooks";
-import { Button } from "../Button";
+import { Button } from '../Button';
+
+import { useDymmmyComponent } from './DummyComponent.hooks';
+
+import styles from './styles.module.scss';
 
 export function DummyComponent() {
   const { counter, setCounter, test } = useDymmmyComponent();
+
+  useEffect(() => {
+    // eslint-disable-next-line no-console
+    console.log(test);
+  }, [test]);
 
   return (
     <div className={styles.wrapper}>
