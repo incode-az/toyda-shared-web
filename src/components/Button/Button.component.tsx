@@ -1,10 +1,14 @@
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss';
 
 type ButtonProps = {
   text: string;
   onClick: () => void;
 };
 
-export function Button({ text }: ButtonProps) {
-  return <button className={styles.wrapper}>{text}</button>;
+export function Button({ text, onClick }: ButtonProps) {
+  return (
+    <button type="button" className={styles.wrapper} onClick={onClick}>
+      {text}
+    </button>
+  );
 }

@@ -22,5 +22,6 @@
         "hasBlock": true
       }
     ]
-  }
+  },
+  "ignoreFiles": ["node_modules/**/*", "dist/**/*"]
 }

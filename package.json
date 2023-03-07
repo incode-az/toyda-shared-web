@@ -29,8 +29,8 @@
   ],
   "scripts": {
     "build": "tsc && vite build",
-    "lint": "next lint",
-    "lint:fix": "next lint --fix",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "lint:fix": " eslint \"**/*.{ts,tsx}\" --fix",
     "prettier:fix": "prettier --write \"**/*.{ts,tsx,json,css,scss,md}\"",
     "stylelint:fix": "stylelint --fix \"**/*.scss\""
   },

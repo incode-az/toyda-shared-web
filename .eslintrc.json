@@ -57,5 +57,6 @@
   },
   "settings": {
     "import/internal-regex": "^@src"
-  }
+  },
+  "ignorePatterns": ["node_modules/", "dist/"]
 }

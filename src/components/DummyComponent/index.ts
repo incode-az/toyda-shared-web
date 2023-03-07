@@ -1,1 +1,1 @@
-export { DummyComponent } from "./DummyComponent.component";
+export { DummyComponent } from './DummyComponent.component';
