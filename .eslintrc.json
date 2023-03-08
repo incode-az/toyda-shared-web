@@ -1,6 +1,12 @@
 {
   "plugins": ["@typescript-eslint", "prettier"],
-  "extends": ["airbnb", "airbnb/hooks", "plugin:@typescript-eslint/recommended", "prettier"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:storybook/recommended"
+  ],
   "parser": "@typescript-eslint/parser",
   "rules": {
     "no-console": [
@@ -18,6 +24,7 @@
 
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "react/function-component-definition": "off",
 
     "prettier/prettier": "warn",
 
@@ -27,6 +34,7 @@
     "import/extensions": "off",
     "import/prefer-default-export": "off",
     "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
     "import/order": [
       "warn",
       {
@@ -58,5 +66,5 @@
   "settings": {
     "import/internal-regex": "^@src"
   },
-  "ignorePatterns": ["node_modules/", "dist/"]
+  "ignorePatterns": ["node_modules/", "dist/", ".storybook/"]
 }
