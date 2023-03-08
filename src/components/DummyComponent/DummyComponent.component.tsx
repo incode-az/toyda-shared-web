@@ -14,13 +14,24 @@ export function DummyComponent() {
     console.log(test);
   }, [test]);
 
+  const someFunc = () => {
+    // eslint-disable-next-line no-console
+    console.log('someFunc');
+  };
+
   return (
     <div className={styles.wrapper}>
       <h1>
         {counter} {test}
       </h1>
 
-      <Button text="Click" onClick={() => setCounter(counter + 1)} />
+      <Button
+        key={1}
+        testProp="test"
+        testProp2={() => someFunc()}
+        text="Click"
+        onClick={() => setCounter(counter + 1)}
+      />
     </div>
   );
 }
