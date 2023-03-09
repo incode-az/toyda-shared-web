@@ -9,7 +9,7 @@ function prepareEntry() {
   const entry = globSync('src/**/index.ts');
 
   return entry.reduce((acc, modulePath) => {
-    const updatedModulePath = modulePath.replace('src\\', '').replace('.ts', '');
+    const updatedModulePath = modulePath.replace('src/', '').replace('src\\', '').replace('.ts', '');
 
     return {
       ...acc,
