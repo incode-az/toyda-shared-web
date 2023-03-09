@@ -33,3 +33,10 @@ jobs:
         run: |
           yarn build
 
+      - name: Publish to npm
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
+          check-version: false
+          access: public
+

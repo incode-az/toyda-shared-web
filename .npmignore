@@ -1,10 +1,19 @@
+.storybook
+.husky
+.vscode
 src
 
+.github
 .gitignore
+CODEOWNERS
 
 tsconfig.json
 tsconfig.node.json
 
 vite.config.ts
-
 yarn.lock
+
+.eslintrc.json
+.prettierrc.json
+.prettierignore
+.stylelintrc
