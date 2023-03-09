@@ -18,6 +18,10 @@
     "./hooks": {
       "import": "./dist/hooks/index.js",
       "require": "./dist/hooks/index.cjs"
+    },
+    "./components/styles": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
     }
   },
   "types": "./dist/index.d.ts",
