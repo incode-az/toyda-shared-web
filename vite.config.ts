@@ -18,6 +18,9 @@ function prepareEntry() {
   }, {});
 }
 
+// eslint-disable-next-line no-console
+console.log(prepareEntry());
+
 // https://vitejs.dev/config/s
 export default defineConfig({
   plugins: [
