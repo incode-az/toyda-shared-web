@@ -1,6 +1,6 @@
 {
   "name": "@toyda/shared-web",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "description": "Shared Components and utils for Toyda related FE applications",
   "type": "module",
