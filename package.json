@@ -1,7 +1,7 @@
 {
   "name": "@toyda/shared-web",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Shared Components and utils for Toyda related FE applications",
   "type": "module",
   "main": "./dist/index.cjs",
